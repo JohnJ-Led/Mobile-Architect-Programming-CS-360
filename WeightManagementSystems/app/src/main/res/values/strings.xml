@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Weight Management Systems</string>
+    <string name="form_username">Username</string>
+    <string name="form_password">Password</string>
+    <string name="form_login">Sign In or Register</string>
+    <string name="notificationOpt">Opt in to receive notifications?</string>
+    <string name="notificationPositive">Accept</string>
+    <string name="notificationNegative">Decline</string>
+    <string name="notificationNeutral">Ask Later</string>
+    <!--Bottom Nav Menu Options -->
+    <string name="home">Tracking</string>
+    <string name="account">Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- FAB Button Options -->
+    <string name="fab_add">Add</string>
+    <string name="fab_edit">Edit</string>
+    <string name="fab_remove">Delete</string>
+    <!-- Calendar Grid String -->
+    <string name="grid_header">Track It</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <!-- Register Dialog -->
+    <string name="registerYes">Yes</string>
+    <string name="registerNo">No</string>
+    <string name="registerNotification">Username or Password not found. Would you like to register a new account?</string>
+    <string name="register_username">Username</string>
+    <string name="register_password">Password</string>
+    <!--Register Resources-->
+    <string name="form_goal">Goal Weight</string>
+    <string name="form_units">Units</string>
+    <string name="form_register">Register</string>
+    <string name="form_register_account">Create New Account</string>
+    <string name="registerDate">Date</string>
+    <string name="select_us">lbs</string>
+    <string name="select_is">kg</string>
+    <string name="add_weight">Add Weight</string>
+    <string name="weight">Weight:</string>
+    <string name="weight_date">Date:</string>
+    <string name="weight_hint">weight</string>
+    <string name="date_hint">date</string>
+    <string name="unit_hint">units</string>
+    <string name="weight_unit">Unit:</string>
+    <string name="edit_weight">Edit Weight</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">This action will delete the selected weight. Proceed.</string>
+</resources>

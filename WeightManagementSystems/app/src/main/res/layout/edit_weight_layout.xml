@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/editWeightHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_weight"
+        android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/editWeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:minWidth="@dimen/custom_min_width"
+        android:maxWidth="@dimen/custom_max_width"
+        android:text="@string/weight"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editWeightHeader"
+        app:layout_constraintRight_toLeftOf="@id/editWeightInput"/>
+
+    <EditText
+        android:id="@+id/editWeightInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/custom_min_width"
+        android:maxWidth="@dimen/custom_max_width"
+        android:layout_margin="20dp"
+        android:inputType="number"
+        android:hint="@string/weight_hint"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/editWeightHeader"
+        app:layout_constraintLeft_toRightOf="@id/editWeightText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/editWeightText"/>
+
+
+    <TextView
+        android:id="@+id/editUnitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/custom_min_width"
+        android:maxWidth="@dimen/custom_max_width"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="@string/weight_unit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editWeightText"
+        app:layout_constraintRight_toLeftOf="@id/editUnitInput"/>
+
+    <EditText
+        android:id="@+id/editUnitInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/custom_min_width"
+        android:maxWidth="@dimen/custom_max_width"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:hint="@string/unit_hint"
+        app:layout_constraintTop_toBottomOf="@+id/editWeightInput"
+        app:layout_constraintLeft_toRightOf="@id/editUnitText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/editUnitText"/>
+
+    <Button
+        android:id="@+id/cancel_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_margin="20dp"
+        android:onClick="onEditCancel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/save_weight"
+        app:layout_constraintTop_toBottomOf="@id/editUnitText"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <Button
+        android:id="@+id/save_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:onClick="onEditSave"
+        android:layout_margin="20dp"
+        app:layout_constraintLeft_toRightOf="@id/cancel_action"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editUnitInput"
+        app:layout_constraintBaseline_toBaselineOf="@id/cancel_action"
+        tools:layout_editor_absoluteX="272dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

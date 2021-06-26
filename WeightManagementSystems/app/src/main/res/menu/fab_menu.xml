@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add_weight"
+        android:onClick="onAddClick"
+    android:title="@string/fab_add"/>
+    <item android:id="@+id/edit_weight"
+        android:onClick="onEditClick"
+        android:title="@string/fab_edit"/>
+    <item android:id="@+id/remove_weight"
+        android:onClick="onDeleteClick"
+        android:title="@string/fab_remove"/>
+</menu>
